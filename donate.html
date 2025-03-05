@@ -110,9 +110,64 @@
         </div>
         <div class="donate2">
             <div class="donate21">
+                <div class="donate21-txt">
+                        <i class="fas fa-hand-holding-heart"></i>&nbsp;
+                        <p>Start donating poor people</p>
+                </div>
+                <div class="container">
+                    <div class="progress-bar">
+                        <div class="step active">1</div>
+                        <div class="step">2</div>
+                        <div class="step">3</div>
+                        <div class="step">4</div>
+                        <div class="step">5</div>
+                    </div>
+            
+                    <form id="multiStepForm">
+                        <div class="form-step active" id="step1">
+                            <div>
+
+                                <h2>Step 1: User Information</h2>
+                                <div class="name">
+                                    <input type="text" placeholder="First Name" required>
+                                    <input type="text" placeholder="Last Name" required>
+                                </div>
+                                <input type="text" placeholder="Email" required>
+                                <input type="text" placeholder="Phone" required>
+                            </div>
+                        </div>
+                        <div class="form-step" id="step2">
+                            <h2>Step 2: PickUp Location</h2>
+                            <input type="text" placeholder="Email" required><br><br>
+                            <input type="tel" placeholder="Google Map Location" required>
+                        </div>
+                        <div class="form-step" id="step3">
+                            <h2>Step 3: Address Details</h2>
+                            <input type="text" placeholder="Address" required><br><br>
+                            <input type="text" placeholder="City" required>
+                        </div>
+                        <div class="form-step" id="step4">
+                            <h2>Step 4: Donation Details</h2>
+                            <input type="text" placeholder="Donation Type" required><br><br>
+                            <input type="number" placeholder="Quantity" required>
+                        </div>
+                        <div class="form-step" id="step5">
+                            <h2>Step 5: Review & Submit</h2>
+                            <p>Review your details before submitting.</p>
+                        </div>
+            
+                        <div class="buttons">
+                            <button type="button" id="prevBtn" class="hidden">Previous</button>
+                            <button type="button" id="nextBtn">Continue</button>
+                        </div>
+                    </form>
+                </div>
+            
                 
             </div>
         </div>
     </section>
+
+    <script src="donate.js"></script>
 </body>
 </html>
